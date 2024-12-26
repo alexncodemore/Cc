@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main() {
+    //pointers stores memory address of another variable
+    int age=22;
+    int *ptr=&age;
+    int _age=*ptr;
+    int **pptr=&ptr;
+    
+    printf("ptr %d\n",ptr);
+    printf("&age %d\n",&age);
+    printf("*(&age) %d\n",*(&age));//ptr=>&age::*(&age)=>*ptr
+    //printf("%d\n",*ptr);
+    //printf("%d\n",_age);
+    //printf("%d\n",age);
+    
+    printf("%d\n",*(&ptr));
+    printf("%d\n",*pptr);
+    
+    printf("%d\n",**pptr);
+    printf("%d\n",pptr);
+    printf("%d\n",&ptr);
+    printf("%d\n\n",&pptr);
+    
+    printf("%p\n",ptr);
+    printf("%p\n",&age);
+    printf("%p\n",*(&age));//ptr=>&age::*(&age)=>*ptr
+    //printf("%p\n",*ptr);
+    //printf("%p\n",_age);
+    //printf("%p\n",age);
+    
+    printf("%p\n",*(&ptr));
+    printf("%p\n",*pptr);
+
+    printf("%p\n",**pptr);
+    printf("%p\n",pptr);
+    printf("%p\n",&ptr);
+    printf("%p\n\n",&pptr);
+
+    return 0;
+}
