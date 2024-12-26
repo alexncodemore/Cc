@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<string.h>
+struct student{
+    char name[100];
+    int rollno;
+    float cgpa;
+};
+
+
+int main() {
+    //structure: store data of different data type
+    struct student s1;
+    //s1.name="Dikshita";
+    strcpy(s1.name,"Dikshita");
+    
+    s1.rollno=1944;
+    s1.cgpa=0.0;   
+    printf("%s,%d,%f\n",s1.name,s1.rollno,s1.cgpa);
+    struct student s2;
+    //s1.name="Dikshita";
+    strcpy(s2.name,"tabish");
+    
+    s2.rollno=1943;
+    s2.cgpa=0.0;   
+    
+    printf("%s,%d,%f\n",s2.name,s2.rollno,s2.cgpa);
+    
+    struct student s3;
+    //s1.name="Dikshita";
+    strcpy(s3.name,"ram");
+    
+    s3.rollno=1942;
+    s3.cgpa=0.0;   
+    
+    printf("%s,%d,%f",s3.name,s3.rollno,s3.cgpa);
+    
+
+    return 0;
+}
